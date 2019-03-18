@@ -725,8 +725,8 @@ ul {
 }
 
 .radio_step {
-    align-items: flex-start;
-    padding-top: 165px;
+    /* align-items: flex-start;
+    padding-top: 165px; */
 }
 
 /* Radio (End) */
