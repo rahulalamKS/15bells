@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="136" viewBox="0 0 136 136">
+    <defs>
+        <filter id="a" width="146.6%" height="146.6%" x="-23.3%" y="-23.3%" filterUnits="objectBoundingBox">
+            <feOffset dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.807843137 0 0 0 0 0.807843137 0 0 0 0 0.807843137 0 0 0 0.5 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(10 6)">
+        <path fill="#F7F7F7" stroke="#C4984F" stroke-width="2" d="M1 1h114v114H1z"/>
+        <g transform="translate(25.045 29.66)">
+            <path fill="#B38841" d="M47.388 1.545v4.858H18.936V1.545s12.853-3.476 28.452 0"/>
+            <path fill="#C4984F" d="M16.159 11.477h34.007V6.029H16.159z"/>
+            <path fill="#B38841" d="M13.394 15.745h39.537v-4.858H13.394z"/>
+            <path fill="#C4984F" d="M12.669 55.421h40.986V15.745H12.669z"/>
+            <circle cx="19.884" cy="22.944" r="3.541" fill="#B38841"/>
+            <circle cx="46.577" cy="22.944" r="3.541" fill="#B38841"/>
+            <path stroke="#B38841" stroke-width="2" d="M9.806 15.746h46.713M26.007 35.583H20.35M40.999 35.583h5.657M14.374 35.583H9.806M51.753 35.583h4.568M26.007 45.39H20.35M40.999 45.39h5.657M14.374 45.39H9.806M51.753 45.39h4.568"/>
+            <path fill="#B38841" d="M16.343 55.432h7.1V29.209h-7.1z"/>
+            <path fill="#FFF" stroke="#FFF" stroke-width="2" d="M33.203 20.112c-4.197 0-7.6 3.423-7.6 7.646v27.763h15.199V27.758c0-4.223-3.403-7.646-7.6-7.646z"/>
+            <path stroke="#B38841" stroke-width="2" d="M0 55.484h65.938"/>
+            <path fill="#B38841" d="M43.036 55.432h7.1V29.209h-7.1z"/>
+        </g>
+    </g>
+</svg>
