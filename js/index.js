@@ -35,32 +35,34 @@ window.onload = function () {
     // onlick hamburger menu close (end)
 
 
-    document.querySelector(".current_city_container").onclick = function(){
+    document.querySelector(".current_city_container").onclick = function () {
         document.querySelector(".city_internal").classList.add("show_city_overlay")
         document.querySelector(".overlay").classList.toggle("overlay_show")
         document.body.style.overflowY = "hidden";
     }
 
-    document.querySelector(".cross_city_overlay").onclick = function(){
+    document.querySelector(".cross_city_overlay").onclick = function () {
         document.querySelector(".city_internal").classList.remove("show_city_overlay")
         document.querySelector(".overlay").classList.remove("overlay_show")
         document.body.style.overflowY = "scroll";
     }
 
-    document.querySelector(".overlay").onclick = function(){
+    document.querySelector(".overlay").onclick = function () {
         document.querySelector(".city_internal").classList.remove("show_city_overlay")
         document.querySelector(".overlay").classList.remove("overlay_show")
         document.body.style.overflowY = "scroll";
     }
-
-    document.querySelector(".back_btn").onclick = function(){
-        window.history.back();
+    
+    if ((window.location == "https://rahulalamks.github.io/15bells/checkbox.html") || (window.location == "https://rahulalamks.github.io/15bells/radion.html")) {
+        document.querySelector(".back_btn").onclick = function () {
+            window.history.back();
+        }
     }
 
-    window.onresize = function (){
-        if(window.outerWidth < 751){
-         document.querySelector(".header_menus .black_menus").classList.remove("black_menus");
-        }else{
+    window.onresize = function () {
+        if (window.outerWidth < 751) {
+            document.querySelector(".header_menus .black_menus").classList.remove("black_menus");
+        } else {
             document.querySelector(".header_menus .black_menus").classList.add("black_menus");
         }
     }
