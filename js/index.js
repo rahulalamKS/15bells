@@ -1,4 +1,42 @@
+document.onreadystatechange = function () {
+    setTimeout(function () {
+        if (document.readyState == "complete") {
+            document.querySelector(".loaderContainer").className = "loaderContainer removeLoader";
+        } else {
+            document.querySelector(".loaderContainer").className = "loaderContainer";
+        }
+    }, 1300)
+
+}
 window.onload = function () {
+
+    const slideClass = document.querySelectorAll(".slide_lines");
+    const aniClass = document.querySelectorAll(".slide_ani");
+
+    setTimeout(function () {
+        slideClass.forEach(function (slides) {
+            slides.classList.add("animation");
+        })
+    }, 1300)
+
+    aniClass.forEach(function (targetAni) {
+        targetAni.addEventListener("click", function () {
+            slideClass.forEach(function (removeClass) {
+                removeClass.classList.remove("animation");
+            })
+            setTimeout(function () {
+                slideClass.forEach(function (addClass) {
+                    addClass.classList.toggle("animation");
+                })
+            }, 0)
+        })
+    });
+
+    setTimeout(function () {
+        document.querySelector(".header").classList.add("ani_header");
+        document.querySelector(".banner_cont").classList.add("banner_ani");
+        document.querySelector(".steps_cont").classList.add("steps_cont_show");
+    }, 2000)
 
     // for header scroll
     window.onscroll = function () {
@@ -52,18 +90,18 @@ window.onload = function () {
         document.querySelector(".overlay").classList.remove("overlay_show")
         document.body.style.overflowY = "scroll";
     }
-    
-    if ((window.location == "https://rahulalamks.github.io/15bells/checkbox.html") || (window.location == "https://rahulalamks.github.io/15bells/radion.html")) {
-        document.querySelector(".back_btn").onclick = function () {
-            window.history.back();
-        }
+
+    document.querySelector(".back_btn").onclick = function () {
+        window.history.back();
     }
 
-    window.onresize = function () {
-        if (window.outerWidth < 751) {
-            document.querySelector(".header_menus .black_menus").classList.remove("black_menus");
-        } else {
-            document.querySelector(".header_menus .black_menus").classList.add("black_menus");
+    if ((window.location == "https://rahulalamks.github.io/15bells/checkbox.html") || (window.location == "https://rahulalamks.github.io/15bells/radion.html")) {
+        window.onresize = function () {
+            if (window.outerWidth < 751) {
+                document.querySelector(".header_menus .black_menus").classList.remove("black_menus");
+            } else {
+                document.querySelector(".header_menus .black_menus").classList.add("black_menus");
+            }
         }
     }
 }
