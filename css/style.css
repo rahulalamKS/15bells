@@ -117,17 +117,7 @@ ul {
     animation: header_ani 0.6s;
     transform: translateY(0px);
 }
-
-/* @keyframes header_ani{
-    0%{
-        transform: translateY(-136px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-} */
-
-.header.fix_header {
+.fix_header {
     background-color: #221d36;
     border-bottom: solid 2px #c4984f;
     align-items: center;
