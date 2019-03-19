@@ -30,6 +30,7 @@ ul {
     margin-bottom: 0 !important;
 }
 
+/* For reusable css */
 .fixed {
     position: fixed;
 }
@@ -57,6 +58,7 @@ ul {
 .item_center {
     align-items: center;
 }
+/* For reusable css */
 
 .overlay {
     position: fixed;
@@ -575,7 +577,7 @@ ul {
     color: #8f8f8f;
 }
 
-/* Checkbox */
+/* for Checkbox page*/
 .black_menus .sign_up {
     border: solid 1px black;
 }
@@ -601,10 +603,8 @@ ul {
 .steps_cont {
     top: 0;
     right: 0;
-    /* width: 651px; */
     width: 50.2%;
     background-color: white;
-    /* z-index: 101; */
     height: 100%;
     padding: 0px 100px;
     display: flex;
@@ -729,9 +729,9 @@ ul {
     padding-left: 10px;
 }
 
-/* Checkobx (End) */
+/* For checkobx page (End) */
 
-/* Radio */
+/* for Radio button page*/
 .radio {
     width: 32px;
     height: 32px;
@@ -779,9 +779,9 @@ ul {
 }
 
 
-/* Radio (End) */
+/* for Radio button page (End) */
 
-/* form */
+/* for form page */
 .input_heading {
     font-size: 18px;
     padding-bottom: 8px;
@@ -818,9 +818,9 @@ ul {
     justify-content: flex-end;
 }
 
-/* form (End) */
-/* For Loader CSS */
+/* for form page (End) */
 
+/* For Loader CSS */
 .loaderContainer {
     position: fixed;
     top: 0;
@@ -830,11 +830,9 @@ ul {
     background-color: #fff;
     width: 100%;
     z-index: 99999;
-    /* display: none; */
 }
 
 .removeLoader {
-    /* left: -100%; */
     opacity: 0;
     pointer-events: none;
     transition: 0.5s;
@@ -897,8 +895,8 @@ ul {
     }
 }
 
-
 /* For Loader CSS */
+
 /* For responsivness */
 @media(max-width:848px) {
 
@@ -1015,7 +1013,6 @@ ul {
 
     .banner_heading {
         font-size: 24px;
-        /* color: black; */
         padding-right: 0;
     }
 
@@ -1067,7 +1064,6 @@ ul {
     }
 
     .banner_cont {
-        /* left: 39%; */
         width: 65%;
     }
 
