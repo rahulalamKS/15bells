@@ -471,12 +471,10 @@ ul {
     padding-top: 8px;
 }
 
-.mail_container,
-.phone_number_cont {
+.contact_container{
     padding: 33px 38px;
 }
-
-.phone_number_cont {
+.contact_container:hover{
     box-shadow: 0 6px 13px 0 rgba(235, 235, 235, 0.5);
     background-color: #eaeaea;
 }
